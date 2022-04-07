@@ -6,6 +6,7 @@ $body-bg-color: #f8f9fb;
 $bg-primary-color: white;
 $border-primary-color: #aaaaaa;
 $link-color: blue;
+$editing-nav-border-color: #bed2dd;
 
 * {
     direction: rtl;
@@ -125,10 +126,10 @@ body {
     }
     .page-container {
         width: calc(min(100vw, 1720px));
-        display: grid;
-        grid-template-areas: "side-nav main-container";
-        justify-content: flex-start;
-        align-items: flex-start;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
         background-color: $bg-primary-color;
         a {
             color: $link-color;
@@ -137,8 +138,30 @@ body {
             }
         }
         .main-container {
-            grid-area: main-container;
-            background-color: orange;
+            width: calc(min(1024px, 100%));
+            .editing-nav {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid $editing-nav-border-color;
+                .editing-link-group {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    border: 1px solid $editing-nav-border-color;
+                    border-top: none;
+                    border-bottom: none;
+                    .editing-link {
+                        font-size: 0.8em;
+                        padding: 5px 5px;
+                        border: 1px solid $editing-nav-border-color;
+                        border-top: none;
+                        border-bottom: none;
+                    }
+                }
+            }
         }
     }
 }

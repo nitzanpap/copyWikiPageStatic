@@ -196,15 +196,19 @@ body .top-nav .login-container .more-options-btn .small-dot {
 
 body .page-container {
   width: calc(min(100vw, 1720px));
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "side-nav main-container";
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: white;
 }
 
@@ -218,9 +222,50 @@ body .page-container a:hover {
 }
 
 body .page-container .main-container {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: main-container;
-  background-color: orange;
+  width: calc(min(1024px, 100%));
+}
+
+body .page-container .main-container .editing-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #bed2dd;
+}
+
+body .page-container .main-container .editing-nav .editing-link-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #bed2dd;
+  border-top: none;
+  border-bottom: none;
+}
+
+body .page-container .main-container .editing-nav .editing-link-group .editing-link {
+  font-size: 0.8em;
+  padding: 5px 5px;
+  border: 1px solid #bed2dd;
+  border-top: none;
+  border-bottom: none;
 }
 /*# sourceMappingURL=style.css.map */
