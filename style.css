@@ -65,7 +65,16 @@ body .top-nav {
 }
 
 body .top-nav .main-menu-toggle {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: ce;
+      -ms-flex-align: ce;
+          align-items: ce;
+  height: 30px;
 }
 
 body .top-nav .logo-container {
@@ -122,14 +131,14 @@ body .top-nav .search-container {
 
 body .top-nav .search-container .search-icon {
   height: 30px;
-  border: 1px solid gray;
+  border: 1px solid #aaaaaa;
   border-left: none;
 }
 
 body .top-nav .search-container .search-bar {
   width: calc(min(400px, 100%));
   height: 30px;
-  border: 1px solid gray;
+  border: 1px solid #aaaaaa;
   border-right: none;
   border-left: none;
 }
@@ -137,8 +146,50 @@ body .top-nav .search-container .search-bar {
 body .top-nav .search-container .search-btn {
   height: 30px;
   width: 40px;
-  border: 1px solid gray;
+  border: 1px solid #aaaaaa;
   border-right: none;
+}
+
+body .top-nav .login-container {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+body .top-nav .login-container .more-options-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3px;
+}
+
+body .top-nav .login-container .more-options-btn .small-dot {
+  background-color: black;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
 }
 
 body .page-container {

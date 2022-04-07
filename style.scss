@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+// Colors:
+
+$body-bg-color: #f8f9fb;
+$bg-primary-color: white;
+$border-primary-color: #aaaaaa;
+$link-color: blue;
+
 * {
     direction: rtl;
     box-sizing: border-box;
@@ -28,11 +36,11 @@ body {
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-    background-color: #f8f9fb;
+    background-color: $body-bg-color;
     .top-nav {
         width: calc(min(100vw, 1720px));
         height: 54px;
-        background-color: white;
+        background-color: $bg-primary-color;
         display: grid;
         grid-template-columns: 46px 171px 1fr 143px;
         grid-template-rows: 54px;
@@ -40,7 +48,10 @@ body {
         align-items: center;
         justify-content: space-between;
         .main-menu-toggle {
-            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: ce;
+            height: 30px;
         }
         .logo-container {
             width: 100%;
@@ -71,24 +82,43 @@ body {
             justify-content: flex-start;
             .search-icon {
                 height: 30px;
-                border: 1px solid gray;
+                border: 1px solid $border-primary-color;
                 border-left: none;
             }
             .search-bar {
                 width: calc(min(400px, 100%));
                 height: 30px;
-                border: 1px solid gray;
+                border: 1px solid $border-primary-color;
                 border-right: none;
                 border-left: none;
             }
             .search-btn {
                 height: 30px;
                 width: 40px;
-                border: 1px solid gray;
+                border: 1px solid $border-primary-color;
                 border-right: none;
             }
         }
         .login-container {
+            font-weight: bold;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            .more-options-btn {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                gap: 3px;
+                .small-dot {
+                    background-color: black;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                }
+            }
         }
     }
     .page-container {
@@ -97,11 +127,11 @@ body {
         grid-template-areas: "side-nav main-container";
         justify-content: flex-start;
         align-items: flex-start;
-        background-color: white;
+        background-color: $bg-primary-color;
         a {
-            color: blue;
+            color: $link-color;
             &:hover {
-                text-decoration: 1px solid underline blue;
+                text-decoration: 1px solid underline $link-color;
             }
         }
         .main-container {
