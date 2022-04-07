@@ -46,8 +46,9 @@ body {
 }
 
 body .top-nav {
+  padding-top: 10px;
   width: calc(min(100vw, 1720px));
-  height: 54px;
+  height: 80px;
   background-color: white;
   display: -ms-grid;
   display: grid;
@@ -144,6 +145,7 @@ body .top-nav .search-container .search-bar {
 }
 
 body .top-nav .search-container .search-btn {
+  padding-left: 5px;
   height: 30px;
   width: 40px;
   border: 1px solid #aaaaaa;

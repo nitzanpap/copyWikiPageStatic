@@ -38,8 +38,9 @@ body {
     align-items: center;
     background-color: $body-bg-color;
     .top-nav {
+        padding-top: 10px;
         width: calc(min(100vw, 1720px));
-        height: 54px;
+        height: 80px;
         background-color: $bg-primary-color;
         display: grid;
         grid-template-columns: 46px 171px 1fr 143px;
@@ -93,6 +94,7 @@ body {
                 border-left: none;
             }
             .search-btn {
+                padding-left: 5px;
                 height: 30px;
                 width: 40px;
                 border: 1px solid $border-primary-color;
