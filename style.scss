@@ -6,6 +6,7 @@ $body-bg-color: #f8f9fb;
 $bg-primary-color: white;
 $border-primary-color: #aaaaaa;
 $link-color: blue;
+$editing-link-color: #2d415e;
 $editing-nav-border-color: #bed2dd;
 
 * {
@@ -159,6 +160,13 @@ body {
                         border: 1px solid $editing-nav-border-color;
                         border-top: none;
                         border-bottom: none;
+                        color: $editing-link-color;
+                        background: rgb(231, 242, 252);
+                        background: linear-gradient(
+                            0deg,
+                            rgba(231, 242, 252, 1) 0%,
+                            rgba(255, 255, 255, 1) 100%
+                        );
                     }
                 }
             }

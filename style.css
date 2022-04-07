@@ -267,5 +267,9 @@ body .page-container .main-container .editing-nav .editing-link-group .editing-l
   border: 1px solid #bed2dd;
   border-top: none;
   border-bottom: none;
+  color: #2d415e;
+  background: #e7f2fc;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e7f2fc), to(white));
+  background: linear-gradient(0deg, #e7f2fc 0%, white 100%);
 }
 /*# sourceMappingURL=style.css.map */
