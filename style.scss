@@ -29,15 +29,29 @@ body {
     justify-content: flex-start;
     align-items: center;
     background-color: #f8f9fb;
+    .top-nav {
+        width: inherit;
+        background-color: greenyellow;
+        display: grid;
+        grid-template-columns: 46px 171px 1fr 143px;
+        grid-template-rows: 54px;
+        align-items: center;
+        text-align: center;
+    }
     .page-container {
         width: calc(min(90vw, 1720px));
         display: grid;
-        grid-template-areas:
-            "top-nav top-nav"
-            "side-nav editing-nav"
-            "side-nav main-container";
+        grid-template-areas: "side-nav main-container";
         justify-content: flex-start;
         align-items: center;
         background-color: white;
+        .side-nav {
+            grid-area: side-nav;
+            background-color: orange;
+        }
+        .main-container {
+            grid-area: main-container;
+            background-color: purple;
+        }
     }
 }

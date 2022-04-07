@@ -45,11 +45,26 @@ body {
   background-color: #f8f9fb;
 }
 
+body .top-nav {
+  width: inherit;
+  background-color: greenyellow;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 46px 171px 1fr 143px;
+      grid-template-columns: 46px 171px 1fr 143px;
+  -ms-grid-rows: 54px;
+      grid-template-rows: 54px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
 body .page-container {
   width: calc(min(90vw, 1720px));
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "top-nav top-nav" "side-nav main";
+      grid-template-areas: "side-nav main-container";
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -57,5 +72,19 @@ body .page-container {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
+}
+
+body .page-container .side-nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: side-nav;
+  background-color: orange;
+}
+
+body .page-container .main-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-container;
+  background-color: purple;
 }
 /*# sourceMappingURL=style.css.map */
