@@ -43,11 +43,21 @@ body {
         display: grid;
         grid-template-areas: "side-nav main-container";
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
         background-color: white;
+        a {
+            color: blue;
+            &:hover {
+                text-decoration: 1px solid underline blue;
+            }
+        }
         .side-nav {
             grid-area: side-nav;
             background-color: orange;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: flex-start;
         }
         .main-container {
             grid-area: main-container;
