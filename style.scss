@@ -39,7 +39,7 @@ body {
         text-align: center;
     }
     .page-container {
-        width: calc(min(90vw, 1720px));
+        width: calc(min(50vw, 1720px));
         display: grid;
         grid-template-areas: "side-nav main-container";
         justify-content: flex-start;
@@ -51,17 +51,9 @@ body {
                 text-decoration: 1px solid underline blue;
             }
         }
-        .side-nav {
-            grid-area: side-nav;
-            background-color: orange;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: flex-start;
-        }
         .main-container {
             grid-area: main-container;
-            background-color: purple;
+            background-color: orange;
         }
     }
 }
