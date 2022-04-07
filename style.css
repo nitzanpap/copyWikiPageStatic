@@ -46,8 +46,6 @@ body {
 }
 
 body .top-nav {
-  padding-top: 10px;
-  margin-bottom: 40px;
   width: calc(min(100vw, 1720px));
   height: 54px;
   background-color: white;
@@ -91,6 +89,26 @@ body .top-nav .logo-container {
 
 body .top-nav .logo-container .wiki-logo {
   height: 100%;
+}
+
+body .top-nav .logo-container .wiki-logo-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .top-nav .search-container .search-bar {
+  width: 400px;
 }
 
 body .page-container {

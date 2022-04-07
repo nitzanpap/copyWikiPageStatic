@@ -30,8 +30,6 @@ body {
     align-items: center;
     background-color: #f8f9fb;
     .top-nav {
-        padding-top: 10px;
-        margin-bottom: 40px;
         width: calc(min(100vw, 1720px));
         height: 54px;
         background-color: white;
@@ -56,13 +54,20 @@ body {
                 height: 100%;
             }
             .wiki-logo-txt {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
                 .wiki-logo-txt-word {
                 }
                 .wiki-logo-txt-description {
                 }
             }
         }
-        .search-bar {
+        .search-container {
+            .search-bar {
+                width: 400px;
+            }
         }
         .login-container {
         }
