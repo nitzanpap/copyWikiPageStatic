@@ -475,6 +475,10 @@ body .page-container .main-container main .text-content .info-sect table tr .ite
   width: 86px;
 }
 
+body .page-container .main-container main .img-card {
+  background-color: #f8f9fb;
+}
+
 body .page-container .main-container main .imgs-column {
   padding: 5px 0;
   display: -webkit-box;
