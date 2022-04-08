@@ -5,7 +5,7 @@
 $body-bg-color: #f8f9fb;
 $bg-primary-color: white;
 $border-primary-color: #aaaaaa;
-$link-color: blue;
+$link-color: rgb(0, 0, 194);
 $editing-link-color: #2d415e;
 $editing-nav-border-color: #bed2dd;
 $lang-select-bg-color: #c1e0ff;
@@ -227,6 +227,7 @@ body {
                 flex-flow: row nowrap;
                 justify-content: space-between;
                 align-items: center;
+                font-size: 0.9em;
                 .text-content {
                     display: flex;
                     flex-flow: column nowrap;
@@ -237,6 +238,26 @@ body {
                         color: $editing-link-color;
                     }
                     .gist {
+                        .toc {
+                            background-color: $body-bg-color;
+                            width: 146px;
+                            border: 1px solid $border-primary-color;
+                            font-size: 0.9em;
+                            margin: 5px 0;
+                            padding: 10px 5px;
+                            .toc-heading {
+                                font-size: inherit;
+                                font-weight: bold;
+                            }
+                            .toc-list {
+                                padding: 5px 0;
+                                display: flex;
+                                flex-flow: column nowrap;
+                                justify-content: center;
+                                align-items: flex-start;
+                                gap: 5px;
+                            }
+                        }
                     }
                 }
                 .imgs-column {

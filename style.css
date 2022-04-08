@@ -236,12 +236,12 @@ body .page-container {
 }
 
 body .page-container a {
-  color: blue;
+  color: #0000c2;
 }
 
 body .page-container a:hover {
-  -webkit-text-decoration: 1px solid underline blue;
-          text-decoration: 1px solid underline blue;
+  -webkit-text-decoration: 1px solid underline #0000c2;
+          text-decoration: 1px solid underline #0000c2;
 }
 
 body .page-container .main-container {
@@ -363,6 +363,7 @@ body .page-container .main-container main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 0.9em;
 }
 
 body .page-container .main-container main .text-content {
@@ -384,5 +385,37 @@ body .page-container .main-container main .text-content {
 
 body .page-container .main-container main .text-content .disambiguation {
   color: #2d415e;
+}
+
+body .page-container .main-container main .text-content .gist .toc {
+  background-color: #f8f9fb;
+  width: 146px;
+  border: 1px solid #aaaaaa;
+  font-size: 0.9em;
+  margin: 5px 0;
+  padding: 10px 5px;
+}
+
+body .page-container .main-container main .text-content .gist .toc .toc-heading {
+  font-size: inherit;
+  font-weight: bold;
+}
+
+body .page-container .main-container main .text-content .gist .toc .toc-list {
+  padding: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 5px;
 }
 /*# sourceMappingURL=style.css.map */
