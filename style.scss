@@ -259,6 +259,23 @@ body {
                             }
                         }
                     }
+                    .info-sect {
+                        .sect-header {
+                            width: 100%;
+                            display: flex;
+                            flex-flow: row wrap;
+                            justify-content: flex-start;
+                            align-items: center;
+                            border-bottom: 1px solid $border-primary-color;
+                            margin: 5px 0;
+                            h2 {
+                            }
+                            .edit-sect {
+                            }
+                        }
+                        .sect-text {
+                        }
+                    }
                 }
                 .imgs-column {
                 }

@@ -418,4 +418,23 @@ body .page-container .main-container main .text-content .gist .toc .toc-list {
           align-items: flex-start;
   gap: 5px;
 }
+
+body .page-container .main-container main .text-content .info-sect .sect-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #aaaaaa;
+  margin: 5px 0;
+}
 /*# sourceMappingURL=style.css.map */
