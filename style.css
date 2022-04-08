@@ -452,7 +452,8 @@ body .page-container .main-container main .text-content .info-sect table {
 }
 
 body .page-container .main-container main .text-content .info-sect table tr td {
-  border: 2px solid #2c2c2c;
+  border: 2px solid #373737;
+  padding: 5px 1px;
 }
 
 body .page-container .main-container main .text-content .info-sect table tr .item-img-container {

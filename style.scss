@@ -11,7 +11,7 @@ $editing-nav-border-color: #bed2dd;
 $lang-select-bg-color: #c1e0ff;
 $lang-select-color: #4fa7ff;
 $lang-select-color-hover: #0b4ffc;
-$table-border-color: #2c2c2c;
+$table-border-color: #373737;
 
 * {
     direction: rtl;
@@ -286,6 +286,7 @@ body {
                             tr {
                                 td {
                                     border: 2px solid $table-border-color;
+                                    padding: 5px 1px;
                                 }
                                 .item-img-container {
                                     width: 86px;
