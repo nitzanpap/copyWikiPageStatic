@@ -187,6 +187,7 @@ body {
                 justify-content: space-between;
                 align-items: center;
                 border-bottom: 1px solid $border-primary-color;
+                font-size: 0.9em;
                 h1 {
                 }
                 .lang-select-label {
@@ -210,6 +211,14 @@ body {
                 justify-content: space-between;
                 align-items: center;
                 .text-content {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 20px;
+                    .disambiguation {
+                        color: $editing-link-color;
+                    }
                     .gist {
                     }
                 }
