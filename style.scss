@@ -11,6 +11,7 @@ $editing-nav-border-color: #bed2dd;
 $lang-select-bg-color: #c1e0ff;
 $lang-select-color: #4fa7ff;
 $lang-select-color-hover: #0b4ffc;
+$table-border-color: #2c2c2c;
 
 * {
     direction: rtl;
@@ -274,11 +275,30 @@ body {
                             }
                         }
                         .sect-text {
-                            margin: 5px 0;
+                            margin: 8px 0;
+                        }
+                        table {
+                            width: 100%;
+                            border-collapse: collapse;
+                            tr {
+                                td {
+                                    border: 2px solid $table-border-color;
+                                }
+                                .item-img-container {
+                                    width: 86px;
+                                }
+                                .item-desc {
+                                }
+                            }
                         }
                     }
                 }
                 .imgs-column {
+                    padding: 5px 0;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: flex-start;
+                    align-items: flex-end;
                 }
             }
         }
