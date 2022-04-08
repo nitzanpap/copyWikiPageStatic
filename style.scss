@@ -279,6 +279,16 @@ body {
                         }
                         .sect-text {
                             margin: 8px 0;
+                            ul {
+                                padding-right: 25px;
+                                list-style: disc;
+                                display: flex;
+                                flex-flow: column nowrap;
+                                justify-content: center;
+                                align-items: flex-start;
+                                li {
+                                }
+                            }
                         }
                         table {
                             width: 100%;

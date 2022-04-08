@@ -446,6 +446,24 @@ body .page-container .main-container main .text-content .info-sect .sect-text {
   margin: 8px 0;
 }
 
+body .page-container .main-container main .text-content .info-sect .sect-text ul {
+  padding-right: 25px;
+  list-style: disc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 body .page-container .main-container main .text-content .info-sect table {
   width: 100%;
   border-collapse: collapse;
