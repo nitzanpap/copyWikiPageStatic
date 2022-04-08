@@ -142,7 +142,7 @@ body {
             width: calc(min(1024px, 100%));
             .editing-nav {
                 display: flex;
-                flex-flow: row nowrap;
+                flex-flow: row wrap;
                 justify-content: space-between;
                 align-items: center;
                 border-bottom: 1px solid $editing-nav-border-color;
@@ -157,9 +157,7 @@ body {
                     .editing-link {
                         font-size: 0.8em;
                         padding: 5px 5px;
-                        border: 1px solid $editing-nav-border-color;
-                        border-top: none;
-                        border-bottom: none;
+                        border-left: 1px solid $editing-nav-border-color;
                         color: $editing-link-color;
                         background: rgb(231, 242, 252);
                         background: linear-gradient(
@@ -167,6 +165,9 @@ body {
                             rgba(231, 242, 252, 1) 0%,
                             rgba(255, 255, 255, 1) 100%
                         );
+                        &:last-of-type {
+                            border: none;
+                        }
                     }
                 }
             }
