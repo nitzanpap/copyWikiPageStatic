@@ -437,4 +437,8 @@ body .page-container .main-container main .text-content .info-sect .sect-header 
   border-bottom: 1px solid #aaaaaa;
   margin: 5px 0;
 }
+
+body .page-container .main-container main .text-content .info-sect .sect-text {
+  margin: 5px 0;
+}
 /*# sourceMappingURL=style.css.map */
