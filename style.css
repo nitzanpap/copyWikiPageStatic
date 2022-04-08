@@ -475,8 +475,61 @@ body .page-container .main-container main .text-content .info-sect table tr .ite
   width: 86px;
 }
 
-body .page-container .main-container main .img-card {
+body .page-container .main-container main .sect-imgs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 5px;
+}
+
+body .page-container .main-container main .sect-imgs .img-card-container {
+  width: 152px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .page-container .main-container main .sect-imgs .img-card-container .img-card {
+  height: 152px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #aaaaaa;
   background-color: #f8f9fb;
+}
+
+body .page-container .main-container main .sect-imgs .img-card-container .img-card img {
+  max-width: 120px;
+  max-height: 120px;
 }
 
 body .page-container .main-container main .imgs-column {

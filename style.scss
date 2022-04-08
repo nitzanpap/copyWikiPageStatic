@@ -306,8 +306,35 @@ body {
                         }
                     }
                 }
-                .img-card {
-                    background-color: $body-bg-color;
+                .sect-imgs {
+                    width: 100%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: flex-start;
+                    gap: 5px;
+                    .img-card-container {
+                        width: 152px;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: center;
+                        align-items: flex-start;
+                        .img-card {
+                            height: 152px;
+                            width: 100%;
+                            display: flex;
+                            flex-flow: column nowrap;
+                            justify-content: center;
+                            align-items: center;
+                            border: 1px solid $border-primary-color;
+                            background-color: $body-bg-color;
+                            img {
+                                max-width: 120px;
+                                max-height: 120px;
+                            }
+                        }
+                        .img-desc {
+                        }
+                    }
                 }
                 .imgs-column {
                     padding: 5px 0;
