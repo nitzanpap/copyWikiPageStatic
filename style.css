@@ -27,6 +27,15 @@
   outline: inherit;
 }
 
+* h1,
+* h2,
+* h3,
+* h4,
+* h5,
+* h6 {
+  font-weight: normal;
+}
+
 body {
   width: 100vw;
   display: -webkit-box;
@@ -46,7 +55,7 @@ body {
 }
 
 body .top-nav {
-  padding-top: 10px;
+  padding: 10px;
   width: calc(min(100vw, 1720px));
   height: 80px;
   background-color: white;
@@ -170,6 +179,15 @@ body .top-nav .login-container {
   gap: 10px;
 }
 
+body .top-nav .login-container .create-account-btn {
+  font-size: 0.9em;
+  padding: 7px;
+}
+
+body .top-nav .login-container .create-account-btn:hover {
+  background-color: #f8f9fb;
+}
+
 body .top-nav .login-container .more-options-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,6 +203,11 @@ body .top-nav .login-container .more-options-btn {
       -ms-flex-align: center;
           align-items: center;
   gap: 3px;
+  padding: 20px 12px;
+}
+
+body .top-nav .login-container .more-options-btn:hover {
+  background-color: #f8f9fb;
 }
 
 body .top-nav .login-container .more-options-btn .small-dot {
