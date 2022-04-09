@@ -290,6 +290,15 @@ body {
                                 li {
                                 }
                             }
+                            ol {
+                                padding-right: 25px;
+                                display: flex;
+                                flex-flow: column nowrap;
+                                justify-content: center;
+                                align-items: flex-start;
+                                li {
+                                }
+                            }
                         }
                         table {
                             width: 100%;
