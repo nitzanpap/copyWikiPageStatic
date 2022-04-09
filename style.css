@@ -548,4 +548,29 @@ body .page-container .main-container main .imgs-column {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+
+body .page-container .main-container main .imgs-column .img-card {
+  height: 152px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #aaaaaa;
+  background-color: #f8f9fb;
+}
+
+body .page-container .main-container main .imgs-column .img-card img {
+  max-width: 120px;
+  max-height: 120px;
+}
 /*# sourceMappingURL=style.css.map */
