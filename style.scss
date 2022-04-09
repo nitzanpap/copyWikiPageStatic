@@ -340,18 +340,26 @@ body {
                     flex-flow: column nowrap;
                     justify-content: flex-start;
                     align-items: flex-end;
+                    font-size: 0.9em;
                     .img-card {
-                        height: 152px;
-                        width: 100%;
+                        padding: 5px;
                         display: flex;
                         flex-flow: column nowrap;
                         justify-content: center;
                         align-items: center;
                         border: 1px solid $border-primary-color;
                         background-color: $body-bg-color;
+                        gap: 2px;
+                        .img-title {
+                            display: flex;
+                            flex-flow: column nowrap;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            font-weight: bold;
+                            background-color: #90ee90;
+                        }
                         img {
-                            max-width: 120px;
-                            max-height: 120px;
                         }
                     }
                 }
